@@ -92,3 +92,11 @@ body {
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
 }
+
+.hide{
+    display: none;
+}
+
+.error{
+    color: #ff465a;
+}
