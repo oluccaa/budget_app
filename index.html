@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget App</title>
+    <title>Orçamento App</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <!-- Google Fonts -->
@@ -17,48 +17,39 @@
             <div class="sub-container">
                 <!-- Budget -->
                 <div class="total-amount-container">
-                    <h3>Budget</h3>
-                    <p class="hide error" id="budget-error">
-                    Value cannot be empty or negative
-                    </p>
-                    <input
-                    type="number"
-                    id="total-amount"
-                    placeholder="Enter Total Amount"
-                    />
-                    <button class="submit" id="total-amount-button">Set Budget</button>
+                    <h3>Orçamento</h3>
+                    <p class="hide error" id="budget-error">O valor não pode ser vazio ou negativo</p>
+                    <input type="number" id="total-amount" placeholder="Insira o valor total"/>
+                    <button class="submit" id="total-amount-button">Definir orçamento</button>
                 </div>
                 <!-- Expenditure -->
                 <div class="user-amount-container">
-                    <h3>Expenses</h3>
-                    <p class="hide error" id="product-title-error">
-                    Values cannot be empty
-                    </p>
-                    <input
-                    type="text" class="product-title" id="product-title" placeholder="Enter Title of Product"/>
-                    <input type="number" id="user-amount" placeholder="Enter Cost of Product"/>
-                    <button class="submit" id="check-amount">Check Amount</button>
+                    <h3>Despesas</h3>
+                    <p class="hide error" id="product-title-error">Os valores não podem estar vazios</p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Insira o título do produto"/>
+                    <input type="number" id="user-amount" placeholder="Insira o custo do produto"/>
+                    <button class="submit" id="check-amount">Verifique o valor</button>
                 </div>
         </div>
         <!-- Output -->
         <div class="output-container flex-space">
             <div>
-                <p>Total Budget</p>
+                <p>Orçamento total</p>
                 <span id="amount">0</span>
             </div>
             <div>
-                <p>Expenses</p>
+                <p>Despesas</p>
                 <span id="expenditure-value">0</span>
             </div>
             <div>
-                <p>Balance</p>
+                <p>Balanço</p>
                 <span id="balance-amount">0</span>
             </div>
             </div>
         </div>
         <!-- List -->
         <div class="list">
-            <h3>Expense List</h3>
+            <h3>Lista de despesas</h3>
             <div class="list-container" id="list"></div>
         </div>
     </div>
